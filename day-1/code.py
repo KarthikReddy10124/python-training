@@ -64,4 +64,22 @@
 #     print("The number is odd")
 
 
+# IF STATEMENT
+
+# if statement
+
+# val=input("Enter the number ")
+# value_float=float(val)
+# if(value_float%2==0):
+#     print("the number is even")
+
+
+    # if- else statement
+
+# val=input("Enter the number ")
+# value_float=float(val)
+# if(value_float%2==0):
+#     print("the number is even")
+# else:
+#     print("The number is odd")
 

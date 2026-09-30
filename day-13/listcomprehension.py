@@ -44,17 +44,30 @@
 # [[0, 0, 0], [0, 0, 1], [0, 1, 0], [0, 1, 2], [0, 2, 1], [0, 2, 2], [1, 0, 0], [1, 0, 2], [1, 1, 1], [1, 1, 2], [1, 2, 0], [1, 2, 1], [1, 2, 2], [2, 0, 1], [2, 0, 2], [2, 1, 0], [2, 1, 1], [2, 1, 2], [2, 2, 0], [2, 2, 1], [2, 2, 2]]
 
 
-if __name__ == '__main__':
-    x = int(input())
-    y = int(input())
-    z = int(input())
-    n = int(input())
-    result = [
-    [i, j, k] 
-    for i in range(x + 1) 
-    for j in range(y + 1) 
-    for k in range(z + 1) 
-    if (i + j + k) != n
-]
+# if __name__ == '__main__':
+#     x = int(input())
+#     y = int(input())
+#     z = int(input())
+#     n = int(input())
+#     result = [
+#     [i, j, k] 
+#     for i in range(x + 1) 
+#     for j in range(y + 1) 
+#     for k in range(z + 1) 
+#     if (i + j + k) != n
+# ]
 
-print(result)
+# print(result)
+
+
+#20.LCM and HCF (GCD)
+def gcd(x, y):
+    while(y):
+        x, y = y, x % y
+    return x
+def lcm(x, y):
+    lcm = (x * y) // gcd(x, y)
+    return lcm
+
+print(f'gcd: {gcd(12,15)}')
+print(f'lcm: {lcm(12,15)}')

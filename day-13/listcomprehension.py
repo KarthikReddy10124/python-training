@@ -11,7 +11,7 @@
 # Print an array of the elements that do not sum to .
 
 
-# Input Format
+# Input Format of it
 
 # Four integers  and , each on a separate line.  fv
 
